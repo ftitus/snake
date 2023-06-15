@@ -3,13 +3,29 @@
   <head>
     <title>Snake Game</title>
     <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
       #gameCanvas {
         background-color: #f1f1f1;
         border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+
+      #gameTitle {
+        font-size: 24px;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
+    <h1 id="gameTitle">Snake</h1>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <button id="startButton">Start</button>
     <button id="resetButton">Reset</button>
